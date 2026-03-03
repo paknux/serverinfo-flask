@@ -63,24 +63,29 @@ isi dengan
 
 ````
 server {
-    listen 80;
-    server_name domain-anda.com; # Atau gunakan IP Publik Bastion
+    listen 80 default_server;
+    listen [::]:80 default_server; # Untuk dukungan IPv6
+
+    server_name _; # Karakter underscore berarti "tangkap semua domain"
 
     location / {
-        proxy_pass http://10.0.x.x:5000; # IP Privat Server Flask & Port Gunicorn/Flask
+        proxy_pass http://10.0.x.x:5000; 
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 }
-
 ````
 
+3. Hapus konfigurasi default nginx
 
-3. Enable sites dan restart nginx
 ````
-sudo ln -s /etc/nginx/sites-available/serverinfo /etc/nginx/sites-enabled/
+sudo rm /etc/nginx/sites-enabled/default
+````
+
+4. Restart nginx
+````
 sudo nginx -t
 sudo systemctl restart nginx
 ````
