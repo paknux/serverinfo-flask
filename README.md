@@ -19,7 +19,7 @@ Buat 2 SG:
 
 AMI yang digunakan adalah Amazon Linux
 
-- Name : internal
+- Name : internal-flask
 - AMI : Amazon Linux 2023 (kernel-6.1)
 - Instance type : t2.nano
 - key pair : vockey
@@ -77,7 +77,7 @@ sudo chown -R ec2-user:ec2-user /home/ec2-user/serverinfo-flask
 ---
 ### B.2. EC2 Bastion Host : NginX Reverse Proxy
 
-- Name : bastion
+- Name : bastion-nginx
 - AMI : Ubuntu Server 24.04 LTS (HVM)
 - Instance type : t2.nano
 - key pair : vockey
