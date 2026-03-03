@@ -158,12 +158,16 @@ http://ip_public_bastion_host
 
 ## A. Konfigurasi VPC kantor
 1. Cari menu VPC
+
+### Buat VPC
 2. Buat VPC secara manual dengan cara Klik tombol oranye : Create VPC
 - VPC settings : pilih VPC only
 - Name : kantor 
 - IPv4 CIDR : 10.100.0.0/16
 - klik tombol oranye Create VPC di bawah
 - hasil dapat dilihat di menu kiri Your VPCs
+
+### Buat Subnet
 
 ## B. Buat SG di VPC kantor
 
