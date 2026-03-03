@@ -31,7 +31,7 @@ cd serverinfo-flask
 
 # 4. Install library Python yang dibutuhkan
 # Kita install flask dan psutil (umumnya digunakan di repo tersebut)
-pip3 install flask psutil
+pip3 install flask psutil gunicorn
 
 # 5. Pastikan hak akses folder benar untuk ec2-user
 chown -R ec2-user:ec2-user /home/ec2-user/serverinfo-flask
