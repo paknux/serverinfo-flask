@@ -150,9 +150,9 @@ http://ip_public_bastion_host
 
 # II. Penempatan Internal Server dan Bastion Host di VPC kantor
 1. VPC akan dibuat secara manual untuk memperjelas pemahaman
-2. Network VPC kantor : 10.0.0.0/16
-3. subnet kantor-public : 10.0.0.1/24
-4. subnet kantor-private : 10.0.0.2/24
+2. Network VPC kantor : 10.100.0.0/16
+3. subnet kantor-public : 10.100.1.0/24
+4. subnet kantor-private : 10.100.2.0/24
 5. tempatkan EC2 bastion (Nginx) di kantor-public
 6. tempatkan EC2 internal (Flask-Python) di kantor-private
 
