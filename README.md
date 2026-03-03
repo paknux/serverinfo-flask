@@ -46,15 +46,16 @@ nohup python3 app.py > log_flask.txt 2>&1 &
 
 AMI : Ubuntu 24.04
 
-
+1. Update dan install paket yang dibutuhkan
 ````
 sudo apt update
 sudo apt install nginx -y
+````
 
+
+2. Edit file konfigurasi sites nginx
+````
 sudo nano /etc/nginx/sites-available/serverinfo
-
-
-
 ````
 
 isi dengan
@@ -73,6 +74,14 @@ server {
     }
 }
 
+````
+
+
+3. Enable sites dan restart nginx
+````
+sudo ln -s /etc/nginx/sites-available/serverinfo /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl restart nginx
 ````
 
 ---
