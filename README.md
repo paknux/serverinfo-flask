@@ -182,6 +182,10 @@ http://ip_public_bastion_host
 - IPv4 subnet CIDR block : 10.100.2.0/24
 
 - klik tombol oranye : Create Subnet
+- Lihat hasilnya di menu kiri Subnet
+
+### A.3. Buat Internet Gateway
+1. klik menu Subnet di sebelah kiri
 
 ## B. Buat SG di VPC kantor
 
