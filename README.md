@@ -158,7 +158,7 @@ http://ip_public_bastion_host
 
 ## A. Konfigurasi VPC kantor
 1. Cari menu VPC
-2. Buat VPC sevara manual dengan cara Klik tombol oranye : Create VPC
+2. Buat VPC secara manual dengan cara Klik tombol oranye : Create VPC
 - VPC settings : pilih VPC only
 - Name : kantor 
 - IPv4 CIDR : 10.100.0.0/16
