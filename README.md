@@ -1,4 +1,4 @@
-# Simple Server Information - Flask & Python - NginX untuk Reverse Proxy
+# Simple Server Information - Flask+Python - NginX untuk Reverse Proxy
 
 ---
 
