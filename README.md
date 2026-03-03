@@ -248,9 +248,13 @@ Buat 2 SG di VPC kantor:
 - SG-kantor-nginx : ijinkan inbound rule port 22, 80 (NginX) dari anywhere-IPv4 (0.0.0.0/0).
 
 ## C. Buat EC2 Internal : Server Information Flask-Python 
-Buat di subnet kantor-private
-Auto assign IP Public : Disable
+Buat di 
+- VPC : kantor
+- subnet : kantor-private
+- Auto assign IP Public : Disable
 
 ## D. Buat EC2 Bastion Host : NginX Reverse Proxy
-Buat di subnet kantor-public
-Auto assign IP Public : Enable
+Buat di 
+- VPC : kantor 
+- subnet kantor-public
+- Auto assign IP Public : Enable
