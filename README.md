@@ -190,6 +190,7 @@ http://ip_public_bastion_host
 2. Klik tombol oranye : Create internet gateway
 - Name : kantor-igw
 3. Klik tombol oranye : Create internet gateway
+- Lihat hasilnya di menu kiri internet gateway
 
 ### A.4. Buat NAT Gateway
 1. klik menu NAT Gateway di sebelah kiri
@@ -201,6 +202,8 @@ http://ip_public_bastion_host
 3. klik tombol Allocate Elastic IP 
 
 4. Klik tombol oranye : Create NAT gateway
+- Lihat hasilnya di menu kiri NAT gateway
+- Lihat Elastic IPs yang dipegang di menu kiri Elastic IPs
 
 ## B. Buat SG di VPC kantor
 
