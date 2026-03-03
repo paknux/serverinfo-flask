@@ -17,7 +17,7 @@ Buat dulu SG yang sesuai, ijinkan inbound rule port 22, 80 (web server), dan 330
 #!/bin/bash
 # 1. Update sistem dan install dependencies
 dnf update -y
-dnf install python3-pip git -y
+dnf install python python3-pip git -y
 
 # 2. Berpindah ke home directory ec2-user
 cd /home/ec2-user
