@@ -23,7 +23,7 @@ AMI yang digunakan adalah Amazon Linux
 - AMI : Amazon Linux 2023 (kernel-6.1)
 - Instance type : t2.nano
 - key pair : vockey
-- Security Group : flaskSG (22 dan 5000)
+- Security Group : SG-flask (22 dan 5000)
 
 
 Masukkan ini sebagai script user data (di menu Advanced Details)
@@ -81,7 +81,7 @@ sudo chown -R ec2-user:ec2-user /home/ec2-user/serverinfo-flask
 - AMI : Ubuntu Server 24.04 LTS (HVM)
 - Instance type : t2.nano
 - key pair : vockey
-- Security Group : nginxSG (22 dan 80)
+- Security Group : SG-nginx (22 dan 80)
 
 1. Update dan install paket yang dibutuhkan
 ````
